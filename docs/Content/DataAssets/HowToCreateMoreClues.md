@@ -1,11 +1,9 @@
-﻿# PrimaryDataAsset_Clue
-
-
-This is the base class for the Clue Data Assets. If you want to create more types of clues, 
-just inherit from this class. 
+﻿# How to Create A New Clue
 
 This isn't a Blueprint, but you shouldn't need to touch the C++ implementation, just create a new instance of the Data Asset.
 
+![image](https://user-images.githubusercontent.com/50571566/218345094-d4e914c7-29af-48a0-a721-464d05604dd9.png)
+![image](https://user-images.githubusercontent.com/50571566/218345103-0ce3aebb-3269-43c2-8c9a-300e4357d27e.png)
 ![image](https://user-images.githubusercontent.com/50571566/218345121-d8fe86ee-0a47-4778-a2c7-0625f061e276.png)
 ![image](https://user-images.githubusercontent.com/50571566/218345138-a62fbc0e-6497-4fb5-a664-c2cc361e1afa.png)
 
