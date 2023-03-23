@@ -1,0 +1,1 @@
+﻿# Clue Struct Library
