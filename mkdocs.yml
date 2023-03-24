@@ -1,1 +1,11 @@
-site_name: SpyderWeb Studios Clue System Plugin Documentation
+site_name:  Clue System Plugin Documentation
+site_author: Spyderweb Studios Ltd
+site_favicon: "/assets/Images/Logos/SpyderwebLogo.png"
+theme:
+  name: readthedocs 
+  nav_style: dark
+  logo: "/assets/Images/Logos/Banner.png"
+  
+  
+plugins:
+  - awesome-pages

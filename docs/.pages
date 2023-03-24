@@ -1,0 +1,6 @@
+﻿nav:
+ - About: index.md
+ - Getting Started
+ - Documentation
+    
+collapse_single_pages: true 
