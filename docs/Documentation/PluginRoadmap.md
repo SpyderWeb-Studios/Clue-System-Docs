@@ -14,4 +14,4 @@ Roadmap:
 
 * Rotating the Meshes
 * Refactoring the Clue Data Asset to be more expandable to include as many types of Clues, such as audio clips.
-* Refactoring the Clue Location to use Data Assets and support nesting
+* Refactoring the Clue Location to be User Defined Strings and support nesting by using multi dimensional arrays
