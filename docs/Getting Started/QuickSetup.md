@@ -3,59 +3,24 @@
 After you have finished the [installation process](/Getting%20Started/Installation) you should be ready
 to get started.
 
+## Clue Config Data Asset
+
+These data assets is how you will define each Branch in the clue tree, for example: 
+ - Location 1
+   - Location 1.1
+   - Location 1.2
+- Location 2
+    - Location 2.1 
+
+Within each of these Branches, you can place in which Clues can be found in each one. The [Clue Manager Subsystem](/Documentation/C++/ClueSystem/Subsystems/ClueManagerSubsystem) will generate a dictionary, that will map each node to create a tree to represent the entire structure. We are working on making this more dynamic, so it can be changed at runtime and more procedural. 
+
+
 ## Clue Setup Component
 
 The first thing you should be adding is the [Clue Setup Component](/Documentation/C++/ClueSystem/Components/ClueSetupComponent).
 
-This component is where you are going to define where each clue is going to be categorised, as
-well as telling the [Clue Manager Subsystem](/Documentation/C++/ClueSystem/Subsystems/ClueManagerSubsystem) how many clues it is 
-expecting to exist in the world and which clue is going to be in which slot in the UI. Because of this important
-behaviour, **this component needs to exist in the world**.
-
-This is where you configure the Clues. In the Details Panel, you can see
-
-![image](https://user-images.githubusercontent.com/50571566/218345473-370077fd-fe30-445c-8d2b-eada818a4fef.png)
-
-You can change the order of the Clues in the UI and their Location.
-
-## Clue Location/Category
-
-Speaking of the Location, this is another name for the Clue Category. Currently, to add/change/delete Clue Locations,
-you will need to open the C++ file for the [EClueLocation](/Documentation/C++/ClueSystem/Enums/EClueLocation) 
-
-Here is where you can find the header file
-
-![image](https://user-images.githubusercontent.com/50571566/218345588-8915a863-1aa5-438b-aecb-aa8a73f944df.png)
-
-You will find something like
-
-```c++
-#pragma once
-
-UENUM(BlueprintType)
-enum EClueLocation
-{
-    CL_Forest,
-    CL_House
-}
-```
-
-Just extend this, just simply add another item to the list so it will look like:
-
-```c++
-#pragma once
-
-UENUM(BlueprintType)
-enum EClueLocation
-{
-    CL_Forest,
-    CL_House,
-    CL_City
-}
-```
-
-Save it, and compile the project. When you open the project up again, this will appear in the Clue Config
-as an option.
+This component is where you are going to be telling the [Clue Manager Subsystem](/Documentation/C++/ClueSystem/Subsystems/ClueManagerSubsystem) how many clues it is 
+expecting to exist in the world and which clue is going to be in which slot in the UI. It will do this by assigning a Root Node in the Details panel.
 
 ## Data Assets
 
