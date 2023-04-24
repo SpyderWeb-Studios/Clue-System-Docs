@@ -1,4 +1,10 @@
-﻿# EClueLocation
+﻿# EClueLocation (Deprecated)
+
+## Updated
+
+This Enum is now fully deprecated, being replaced by a much more scalable String based approach. You will no longer require opening ANY C++ files in order to use the system. 
+
+## Old Documentation
 
 This is the only place in the whole project where you may need to open a C++ file, but it is really easy and you don't need any fancy software.
 
