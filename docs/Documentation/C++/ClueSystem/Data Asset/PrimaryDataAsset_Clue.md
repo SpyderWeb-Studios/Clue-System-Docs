@@ -9,13 +9,13 @@ This isn't a Blueprint, but you shouldn't need to touch the C++ implementation, 
 Straight out of the box you can create 2 types of Data Assets. If you want to create an additional Clue Type, you can extend this class in a new child
 class and assign a User Widget that will handle the Inspection, which needs to implement the [IClueSystemUI_Interface](/docs/Documentation/C%2B%2B/ClueSystem/Interfaces/IClueSystemUI_Interface.md) in order to work. 
 
-## [ClueTypeMesh](/docs/Documentation/C%2B%2B/ClueSystem/Data%20Asset/Clue%20Types/ClueTypeMesh.md)
+## [ClueTypeMesh](/docs/Documentation/Content/Clue%20Types/ClueTypeMesh.md)
 
-![](/docs/assets/Images/Screenshots/MeshType.png)
+![](https://imgur.com/m0z2r6i.png)
 
-## [ClueTypeImage](/docs/Documentation/C%2B%2B/ClueSystem/Data%20Asset/Clue%20Types/ClueTypeImage.md)
+## [ClueTypeImage](/docs/Documentation/Content/Clue%20Types/ClueTypeImage.md)
 
-![](/docs/assets/Images/Screenshots/ImageType.png)
+![](https://imgur.com/doaLlOH.png)
 
 This means you can finely control where and how the Clue looks.
 
