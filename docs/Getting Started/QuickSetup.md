@@ -8,11 +8,10 @@ to get started.
 These data assets is how you will define each Branch in the clue tree, for example: 
 
  - Location 1
-   - Location 1.1
-   - Location 1.2
-
+   * Location 1.1
+   * Location 1.2
 - Location 2
-    - Location 2.1 
+    * Location 2.1 
 
 Within each of these Branches, you can place in which Clues can be found in each one. The [Clue Manager Subsystem](/Documentation/C++/ClueSystem/Subsystems/ClueManagerSubsystem) will generate a dictionary, that will map each node to create a tree to represent the entire structure. We are working on making this more dynamic, so it can be changed at runtime and more procedural. 
 
