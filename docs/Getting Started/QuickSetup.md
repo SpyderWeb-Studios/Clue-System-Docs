@@ -6,9 +6,11 @@ to get started.
 ## Clue Config Data Asset
 
 These data assets is how you will define each Branch in the clue tree, for example: 
+
  - Location 1
    - Location 1.1
    - Location 1.2
+
 - Location 2
     - Location 2.1 
 

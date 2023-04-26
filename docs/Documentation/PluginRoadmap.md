@@ -10,6 +10,7 @@ Current Features:
 - Event driven to improve performance
 
 Completed Roadmap Items:
+
 - Refactoring the Clue Data Asset to be more expandable to include as many types of Clues.
 - Refactoring the Clue Location to be User Defined Strings and support nesting by using multi dimensional arrays
 - Completely C++ Asynchronous Loading of Soft Object Pointers for the Data Asset
