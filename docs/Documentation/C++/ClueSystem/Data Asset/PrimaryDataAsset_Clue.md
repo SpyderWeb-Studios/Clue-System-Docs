@@ -6,11 +6,17 @@ just inherit from this class.
 
 This isn't a Blueprint, but you shouldn't need to touch the C++ implementation, just create a new instance of the Data Asset.
 
-![image](https://user-images.githubusercontent.com/50571566/218345121-d8fe86ee-0a47-4778-a2c7-0625f061e276.png)
-![image](https://user-images.githubusercontent.com/50571566/218345138-a62fbc0e-6497-4fb5-a664-c2cc361e1afa.png)
+Straight out of the box you can create 2 types of Data Assets. If you want to create an additional Clue Type, you can extend this class in a new child
+class and assign a User Widget that will handle the Inspection, which needs to implement the [IClueSystemUI_Interface](/docs/Documentation/C%2B%2B/ClueSystem/Interfaces/IClueSystemUI_Interface.md) in order to work. 
 
-You can change which type of Clue Display you want, Mesh or Image. If you had a prerendered image of a clue that you wanted to use, then you would disable UsesMesh.
-For the Mesh, you can obviously choose which static mesh you want to choose, how far away from the camera it should be and a default rotation and location offset.
+## [ClueTypeMesh](/docs/Documentation/C%2B%2B/ClueSystem/Data%20Asset/Clue%20Types/ClueTypeMesh.md)
+
+![](/docs/assets/Images/Screenshots/MeshType.png)
+
+## [ClueTypeImage](/docs/Documentation/C%2B%2B/ClueSystem/Data%20Asset/Clue%20Types/ClueTypeImage.md)
+
+![](/docs/assets/Images/Screenshots/ImageType.png)
+
 This means you can finely control where and how the Clue looks.
 
 ![image](https://user-images.githubusercontent.com/50571566/218345194-9730e615-a23f-4d2d-936a-f45e944a1c97.png)

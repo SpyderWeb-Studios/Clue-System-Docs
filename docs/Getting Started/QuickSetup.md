@@ -19,26 +19,25 @@ Within each of these Branches, you can place in which Clues can be found in each
 
 The first thing you should be adding is the [Clue Setup Component](/Documentation/C++/ClueSystem/Components/ClueSetupComponent).
 
-This component is where you are going to be telling the [Clue Manager Subsystem](/Documentation/C++/ClueSystem/Subsystems/ClueManagerSubsystem) how many clues it is 
-expecting to exist in the world and which clue is going to be in which slot in the UI. It will do this by assigning a Root Node in the Details panel.
+This component is where you are going to be telling the [Clue Manager Subsystem](/Documentation/C++/ClueSystem/Subsystems/ClueManagerSubsystem) how many clues it is expecting to exist in the world and which clue is going to be in which slot in the UI. It will do this by assigning a Root Node in the Details panel.
 
-## Data Assets
+![](/docs/assets/Images/Screenshots/Setup.png)
 
-So we now have how we setup the system, and how to extend it with our own locations/categories. Let's move 
-onto the meat of the system which is setting up the clues themselves. 
+## Clue Type Data Assets
 
-This isn't a Blueprint, but you shouldn't need to touch the C++ implementation, just create a new instance of the Data Asset.
+These are the Base Data Assets for each Clue in your game. They provide a common interface for you to create any type of clue that you may want. The plugin comes with [Mesh](/docs/Documentation/C%2B%2B/ClueSystem/Data%20Asset/Clue%20Types/ClueTypeMesh.md) and [Image](/docs/Documentation/C%2B%2B/ClueSystem/Data%20Asset/Clue%20Types/ClueTypeImage.md) Types by default, but using this system you can create any type that you may need for your projects. You just need to create a Widget that implements the [IClueSystemUI_Interface](/docs/Documentation/C%2B%2B/ClueSystem/Interfaces/IClueSystemUI_Interface.md) and assign it as the Clue Widget Class. 
 
-![image](https://user-images.githubusercontent.com/50571566/218345094-d4e914c7-29af-48a0-a721-464d05604dd9.png)
-![image](https://user-images.githubusercontent.com/50571566/218345103-0ce3aebb-3269-43c2-8c9a-300e4357d27e.png)
-![image](https://user-images.githubusercontent.com/50571566/218345121-d8fe86ee-0a47-4778-a2c7-0625f061e276.png)
-![image](https://user-images.githubusercontent.com/50571566/218345138-a62fbc0e-6497-4fb5-a664-c2cc361e1afa.png)
+## Clue Actor
 
-You can change which type of Clue Display you want, Mesh or Image. If you had a prerendered image of a clue that you wanted to use, then you would disable UsesMesh.
-For the Mesh, you can obviously choose which static mesh you want to choose, how far away from the camera it should be and a default rotation and location offset.
-This means you can finely control where and how the Clue looks.
+To setup the Clues in the Level, all that is required is to drag out an instance of the class from the plugin content folder. Then assign a Data Asset for the Clue to use.
 
-![image](https://user-images.githubusercontent.com/50571566/218345194-9730e615-a23f-4d2d-936a-f45e944a1c97.png)
+To interact with a clue and attempt to pick it up, some setup is required but not much. We have created a single function that will handle all the backend stuff, you just need to worry about how you want to call the function
 
-To make the web of clues, you simply just add in an element to the Additional Information array.
-This will automatically populate the UI with the extra spots. 
+![](/docs/assets/Images/Screenshots/AttemptInteraction.png)
+
+This can be called via an interface call or just directly called, the choice is up to you. We didn't want to implement an interaction interface for you, as many of you who have got this plugin will likely have your own. This is designed to easily slot into as many different workflows and projects as possible.
+
+[Creating Interfaces](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Blueprints/UserGuide/Types/Interface/)
+[Using Interfaces](https://cghero.com/tutorials/blueprint-interfaces-unreal-engine-5)
+[Unreal Wiki - Interfaces](https://unreal.gg-labs.com/wiki-archives/macros-and-data-types/interfaces-in-c++)
+

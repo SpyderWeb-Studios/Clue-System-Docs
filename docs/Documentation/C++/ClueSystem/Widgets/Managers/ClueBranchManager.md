@@ -1,0 +1,3 @@
+# Clue Branch Manager
+
+This is the replacement class for the [Clue List Manager](/docs/Documentation/C%2B%2B/ClueSystem/Widgets/Managers/ClueListManager.md) as that is now deprecated. It will get a Clue Config to manage, so you can design and use different UI systems to manage different Branches. By default, it will fill up the ```ClueBranchesPanel``` variable with instances of the Clue Slot Widget specified in each Clue Data Asset. This behaviour can be overwritten with the ```OnClueConfigLoaded``` n.n, and by retrieving the loaded Data Asset with the ```GetClueConfig``` Function

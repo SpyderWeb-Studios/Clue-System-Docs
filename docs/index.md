@@ -12,4 +12,4 @@ to see how to get started with our plugin.
 
 
 
-We will be looking to our community for ideas to add to this list, as well how our own needs with this system progress.
+We will be looking to our community for ideas to add to our [Roadmap](/docs/Documentation/PluginRoadmap.md) as well how our own needs with this system progress.
